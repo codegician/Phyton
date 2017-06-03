@@ -13,12 +13,16 @@ def draw_art():
     dark.shape("turtle")
     dark.color("orange")
     dark.speed(2)
-    draw_square(dark)
     
-    xen = turtle.Turtle()
-    xen.color("blue")
-    xen.shape("arrow")
-    xen.circle(100)
+
+    for i in range(1, 36):
+        draw_square(dark)
+        dark.right(10)
+        
+   #xen = turtle.Turtle()
+   #xen.color("blue")
+   #xen.shape("arrow")
+   #xen.circle(100)
     
     window.exitonclick()
 
